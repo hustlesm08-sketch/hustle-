@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hustle℠</title>
+
+<style>
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+    /* gradient background */
+    background: linear-gradient(135deg, #f9f9f9, #e0f7fa); 
+    position: relative;
+}
+
+/* optional watermark on top of gradient */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("HTML.jpg") no-repeat center;
+    background-size: 500px;
+    opacity: 0.05; /* very light watermark */
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+/* ===== HEADINGS ===== */
+h1{
+    font-size:52px;
+    color:rgb(73,5,5);
+    margin-bottom:20px;
+}
+h2{
+    font-size:42px;
+    margin:30px 0;
+}
+h3,h4,h5{
+    font-size:36px;
+    margin:30px 0 15px;
+}
+
+/* ===== TEXT ===== */
+p{
+    font-size:26px;
+    max-width:1200px;
+    margin:20px auto;
+}
+
+/* ===== LIST BOXES ===== */
+ul{
+    list-style:none;
+    margin:40px auto;
+    padding:30px;
+    max-width:1200px;
+    border-radius:15px;
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    box-shadow:0 10px 25px rgba(0,0,0,0.25);
+}
+
+li{
+    color:#fff;
+    font-size:28px;
+    padding:10px 0;
+}
+
+/* ===== BUTTONS ===== */
+.button{
+    padding:15px 40px;
+    margin:15px;
+    font-size:22px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    color:white;
+    background:linear-gradient(135deg,#11998e,#38ef7d);
+    transition:0.3s ease;
+}
+
+.button:hover{
+    background:linear-gradient(135deg,#6a11cb,#2575fc);
+    transform:scale(1.05);
+}
+
+/* ===== IMAGE TOUCH DISPLAY ===== */
+/* ===== IMAGE SCROLL DISPLAY ===== */
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 50px auto;
+}
+
+.gallery img{
+    width: 80%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    transition: transform 0.4s ease;
+}
+
+/* touch + hover zoom */
+.gallery img:hover,
+.gallery img:active{
+    transform: scale(1.05);
+}
+
+
+/* ===== CONTACT SECTION (BOTTOM) ===== */
+.contact{
+    margin-top:60px;
+    padding:40px 20px;
+    background:#f2f2f2;
+    border-radius:20px;
+}
+
+form{
+    margin:20px auto;
+    max-width:500px;
+}
+
+label{
+    font-size:26px;
+    display:block;
+    margin-bottom:10px;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    font-size:20px;
+    border-radius:10px;
+    border:1px solid #333;
+    text-align:center;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    margin-top:40px;
+    padding:25px;
+    font-size:24px;
+    background:black;
+    color:white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    h1{font-size:40px;}
+    h2{font-size:32px;}
+    h3,h4,h5{font-size:28px;}
+    p{font-size:22px;}
+    li{font-size:22px;}
+    .button{width:100%;}
+}
+</style>
+</head>
+
+<body>
+
+<h1>Hustle℠</h1>
+
+<h2>WELCOME TO MY HOME PAGE</h2>
+
+<p>
+Your Future. Your Brand. Your Lifestyle. All Online With Hustle℠.
+Hustle℠ is a modern online business platform offering MBBS career services abroad,
+SMM growth solutions, and lifestyle essentials. With 150+ happy clients, we grow with you every step.
+</p>
+
+<ul>
+<li>Explore Hustle℠ Services</li>
+<li>Talk to Our Team</li>
+<li>Start Your Journey</li>
+</ul>
+
+<ul>
+<li>150+ Happy Clients Across World</li>
+<li>Trusted Online Services</li>
+<li>Expert Support in Every Division</li>
+<li>Fast Response & Full Transparency</li>
+</ul>
+
+<h3>About Hustle℠</h3>
+<p>
+We believe everyone deserves the right support to move forward.
+Hustle℠ works across major sectors to help students, companies,
+organizations, businesses, and shoppers live smarter.
+</p>
+
+
+
+<!-- TOUCH IMAGE DISPLAY -->
+<div class="gallery">
+<img src="image 1.jpg">
+<img src="image 2.jpg">
+<img src="image 3.jpg">
+<img src="image 4.jpg">
+<img src="image 5.jpg">
+<img src="image 6.jpg">
+<img src="image 7.jpg">
+<img src="image 8.jpg">
+</div>
+
+<!-- CONTACT AT BOTTOM -->
+<div class="contact">
+<h5>Contact Us</h5>
+<p>Let's begin your success story</p>
+
+<form>
+<label>Email</label>
+<input type="email" placeholder="hustlesm08@gmail.com">
+</form>
+
+<form>
+<label>Instagram ID</label>
+<input type="text" placeholder="_hustlesm_">
+</form>
+</div>
+
+<h4>Our Services</h4>
+
+<div>
+<a href="#"><button class="button">About</button></a>
+<a href="#"><button class="button">Principles</button></a>
+<a href="#"><button class="button">Our Services</button></a>
+<a href="#"><button class="button">Contact</button></a>
+</div>
+
+<footer>
+<b>@Hustle℠ — Helping you grow from every angle</b><br>
+<b>For a detailed view feel free to contact on Instagram</b>
+</footer>
+
+</body>
+</html>
